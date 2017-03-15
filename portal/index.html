@@ -1,0 +1,51 @@
+<!-- This file can be run standalone. The portal on the website integrates
+	 the body only into the WordPress page.
+	 http://stealthshampoo.com/nickydrop/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>NickyDrop</title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="//code.jquery.com/jquery.min.js" ></script>
+	<script type="text/javascript" src="http://stealthshampoo.com/ndp/twitch-js-sdk/twitch.js" ></script>
+	<script type="text/javascript" src="http://stealthshampoo.com/ndp/portal.js" defer></script>
+	<link rel="shortcut icon" type="image/png" href="images/icon.png"/>
+  </head>
+
+  <body>
+	<div id="minimum">
+	  Minimum bit amount:<br>
+	  <input type="text" id="min-input" value="0"><br><br>
+	</div>
+	<div id="image">
+	  Image URL (Template and instructions download
+	  <a href="http://stealthshampoo.com/NickyDrop.rar">here</a>!)<br>
+	  <input type="text" id="img-input"><br><br>
+	</div>
+	<div id="check">
+	  <input type="checkbox" id="botcheck">
+	  Connect with DeepBot <b>(Requires forwarding port 3337)</b><br><br>
+	</div>
+
+	<div id="botinfo">
+	  <div>
+		DeepBot API Secret Key:<br>
+		<input type="password" id="bot-key-input"><br>
+
+		VIP multiplier:<br>
+		<input type="text" id="vip-input" value="1"><br>
+
+		Remote IP (leave blank if DeepBot is running on your computer):<br>
+		<input type="password" id="ext-ip"><br><br>
+	  </div>
+	</div>
+
+	<div id="connect-buttons">
+	  <img src="http://stealthshampoo.com/connect_dark.png" class="twitch-connect" href="#"/><br><br>
+	  <a href="https://twitch.streamlabs.com/stealthshampoo">
+		<img class="Paypal" src="http://stealthshampoo.com/Donate%20Button.png"/>
+	  </a>
+	</div>
+  </body>
+</html>

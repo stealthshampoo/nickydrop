@@ -1,0 +1,36 @@
+#board {
+	width: 384px;
+	height: 550px;
+	top: 0px;
+	left: 0px;
+	opacity: 100;
+	overflow: hidden;
+	position: relative;
+}
+
+#chip {
+	width: 30px;
+	height: 30px;
+	top: 108px;
+	left: 16px;
+	position: absolute;
+	opacity: 100;
+}
+
+#title-name {
+    width: 384px;
+    height: 58px;
+    top: 22px;
+    left: 0px;
+    text-align: center;
+    color: #f1f1f1;
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+}
+
+#chip.animate {
+	transition: 400 linear;
+	-webkit-transform: rotate(45deg);
+}
